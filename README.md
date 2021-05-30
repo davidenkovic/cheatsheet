@@ -1,23 +1,4 @@
-# LeoCode Doc 
-
-## Anmerkung 
-
-*Github Pages:*
-[Index](https://htl-leonding-project.github.io/leo-code)
-
-
-## Projektbeschreibung
-
-LeoCode ist eine Webanwendung die für Schüler der HTL Leonding entwickelt wird, um das Coding zu üben.
-
-## Team
-
-* Benjamin Besic
-* David Ignjatovic
-* Yimne Raid
-* Bozidar Spasenovic
-
-## GH-pages commands
+# GH-pages commands
 
 1. ```.\part1.sh```
 
