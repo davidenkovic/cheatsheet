@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.15">
 <link rel="icon" type="image/png" href="themes/favicon.png">
-<title>Test</title>
+<title>Cheatsheet NVS 4AHIF 2021</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /* Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -437,6 +437,221 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+pre.rouge table td { padding: 5px; }
+pre.rouge table pre { margin: 0; }
+pre.rouge .cm {
+  color: #999988;
+  font-style: italic;
+}
+pre.rouge .cp {
+  color: #999999;
+  font-weight: bold;
+}
+pre.rouge .c1 {
+  color: #999988;
+  font-style: italic;
+}
+pre.rouge .cs {
+  color: #999999;
+  font-weight: bold;
+  font-style: italic;
+}
+pre.rouge .c, pre.rouge .ch, pre.rouge .cd, pre.rouge .cpf {
+  color: #999988;
+  font-style: italic;
+}
+pre.rouge .err {
+  color: #a61717;
+  background-color: #e3d2d2;
+}
+pre.rouge .gd {
+  color: #000000;
+  background-color: #ffdddd;
+}
+pre.rouge .ge {
+  color: #000000;
+  font-style: italic;
+}
+pre.rouge .gr {
+  color: #aa0000;
+}
+pre.rouge .gh {
+  color: #999999;
+}
+pre.rouge .gi {
+  color: #000000;
+  background-color: #ddffdd;
+}
+pre.rouge .go {
+  color: #888888;
+}
+pre.rouge .gp {
+  color: #555555;
+}
+pre.rouge .gs {
+  font-weight: bold;
+}
+pre.rouge .gu {
+  color: #aaaaaa;
+}
+pre.rouge .gt {
+  color: #aa0000;
+}
+pre.rouge .kc {
+  color: #000000;
+  font-weight: bold;
+}
+pre.rouge .kd {
+  color: #000000;
+  font-weight: bold;
+}
+pre.rouge .kn {
+  color: #000000;
+  font-weight: bold;
+}
+pre.rouge .kp {
+  color: #000000;
+  font-weight: bold;
+}
+pre.rouge .kr {
+  color: #000000;
+  font-weight: bold;
+}
+pre.rouge .kt {
+  color: #445588;
+  font-weight: bold;
+}
+pre.rouge .k, pre.rouge .kv {
+  color: #000000;
+  font-weight: bold;
+}
+pre.rouge .mf {
+  color: #009999;
+}
+pre.rouge .mh {
+  color: #009999;
+}
+pre.rouge .il {
+  color: #009999;
+}
+pre.rouge .mi {
+  color: #009999;
+}
+pre.rouge .mo {
+  color: #009999;
+}
+pre.rouge .m, pre.rouge .mb, pre.rouge .mx {
+  color: #009999;
+}
+pre.rouge .sa {
+  color: #000000;
+  font-weight: bold;
+}
+pre.rouge .sb {
+  color: #d14;
+}
+pre.rouge .sc {
+  color: #d14;
+}
+pre.rouge .sd {
+  color: #d14;
+}
+pre.rouge .s2 {
+  color: #d14;
+}
+pre.rouge .se {
+  color: #d14;
+}
+pre.rouge .sh {
+  color: #d14;
+}
+pre.rouge .si {
+  color: #d14;
+}
+pre.rouge .sx {
+  color: #d14;
+}
+pre.rouge .sr {
+  color: #009926;
+}
+pre.rouge .s1 {
+  color: #d14;
+}
+pre.rouge .ss {
+  color: #990073;
+}
+pre.rouge .s, pre.rouge .dl {
+  color: #d14;
+}
+pre.rouge .na {
+  color: #008080;
+}
+pre.rouge .bp {
+  color: #999999;
+}
+pre.rouge .nb {
+  color: #0086B3;
+}
+pre.rouge .nc {
+  color: #445588;
+  font-weight: bold;
+}
+pre.rouge .no {
+  color: #008080;
+}
+pre.rouge .nd {
+  color: #3c5d5d;
+  font-weight: bold;
+}
+pre.rouge .ni {
+  color: #800080;
+}
+pre.rouge .ne {
+  color: #990000;
+  font-weight: bold;
+}
+pre.rouge .nf, pre.rouge .fm {
+  color: #990000;
+  font-weight: bold;
+}
+pre.rouge .nl {
+  color: #990000;
+  font-weight: bold;
+}
+pre.rouge .nn {
+  color: #555555;
+}
+pre.rouge .nt {
+  color: #000080;
+}
+pre.rouge .vc {
+  color: #008080;
+}
+pre.rouge .vg {
+  color: #008080;
+}
+pre.rouge .vi {
+  color: #008080;
+}
+pre.rouge .nv, pre.rouge .vm {
+  color: #008080;
+}
+pre.rouge .ow {
+  color: #000000;
+  font-weight: bold;
+}
+pre.rouge .o {
+  color: #000000;
+  font-weight: bold;
+}
+pre.rouge .w {
+  color: #bbbbbb;
+}
+pre.rouge {
+  background-color: #f8f8f8;
+}
+</style>
+<style>
     pre.rouge .hll {
         background-color: #ffc;
     }
@@ -445,16 +660,458 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
     }
 </style>
 </head>
-<body class="article">
+<body class="article toc2 toc-left">
 <div id="header">
-<h1>Test</h1>
+<h1>Cheatsheet NVS 4AHIF 2021</h1>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_entity">1. Entity</a>
+<ul class="sectlevel2">
+<li><a href="#_string_format">1.1. String.format</a></li>
+<li><a href="#_unique_constraints">1.2. Unique Constraints</a></li>
+</ul>
+</li>
+<li><a href="#_control">2. Control</a>
+<ul class="sectlevel2">
+<li><a href="#_orm_panache">2.1. ORM (Panache)</a></li>
+<li><a href="#_insert_data">2.2. Insert Data</a></li>
+<li><a href="#_namedquery">2.3. NamedQuery</a></li>
+<li><a href="#_logger">2.4. Logger</a></li>
+<li><a href="#_unmodifiable_list">2.5. Unmodifiable List</a></li>
+<li><a href="#_read_csv">2.6. Read CSV</a></li>
+</ul>
+</li>
+<li><a href="#_boundaryservice">3. Boundary/Service</a>
+<ul class="sectlevel2">
+<li><a href="#_inject_repository">3.1. Inject Repository</a></li>
+<li><a href="#_uriinfo">3.2. UriInfo</a></li>
+<li><a href="#_params">3.3. Params</a></li>
+</ul>
+</li>
+<li><a href="#_jax_rs_formparam_example_html_formular">4. JAX-RS @FormParam example (HTML-Formular)</a>
+<ul class="sectlevel2">
+<li><a href="#_html_form">4.1. HTML Form</a></li>
+<li><a href="#_formparam_example">4.2. @FormParam Example</a></li>
+</ul>
+</li>
+<li><a href="#_i18n">5. I18N</a></li>
+<li><a href="#_marshalling_und_unmarshalling_json">6. Marshalling und Unmarshalling JSON</a>
+<ul class="sectlevel2">
+<li><a href="#_json_p">6.1. JSON P</a></li>
+</ul>
+</li>
+</ul>
+</div>
 </div>
 <div id="content">
+<div class="sect1">
+<h2 id="_entity"><a class="anchor" href="#_entity"></a>1. Entity</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>@Entity</p>
+</li>
+<li>
+<p>@Table(name = "table_name")</p>
+</li>
+<li>
+<p>@Id</p>
+<div class="ulist">
+<ul>
+<li>
+<p>sollte Long sein</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>@GeneratedValue(strategy = GenerationType.IDENTITY)</p>
+</li>
+<li>
+<p>@JoinColumn(name = "ROOM_NO")</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Für Foreign-Key-Spalte in der Tabelle der referenzierenden Entität</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>@Column(name = "DATE_TO", cascade = {CascadeType.All})</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_string_format"><a class="anchor" href="#_string_format"></a>1.1. String.format</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="java"><span class="nd">@Override</span>
+<span class="kd">public</span> <span class="nc">String</span> <span class="nf">toString</span><span class="o">()</span> <span class="o">{</span>
+<span class="k">return</span> <span class="nc">String</span><span class="o">.</span><span class="na">format</span><span class="o">(...);</span>
+<span class="o">}</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>String &#8594; %s<br>
+Decimal integer &#8594; %d<br>
+Date &#8594; %tF</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_unique_constraints"><a class="anchor" href="#_unique_constraints"></a>1.2. Unique Constraints</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="java"><span class="nd">@Table</span><span class="o">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">"H_CUSTOMER"</span><span class="o">,</span><span class="n">uniqueConstraints</span> <span class="o">=</span> <span class="nd">@UniqueConstraint</span><span class="o">(</span><span class="n">columnNames</span><span class="o">={</span><span class="s">"FIRST_NAME"</span><span class="o">,</span> <span class="s">"LAST_NAME"</span><span class="o">}))</span></code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_control"><a class="anchor" href="#_control"></a>2. Control</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_orm_panache"><a class="anchor" href="#_orm_panache"></a>2.1. ORM (Panache)</h3>
+<div class="paragraph">
+<p>Ohne dem kein Panache.
+<strong>@ApplicationScoped</strong> nicht vergessen!</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="java"><span class="nd">@ApplicationScoped</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Repository</span> <span class="kd">implements</span> <span class="nc">Repository</span><span class="o">&lt;</span><span class="nc">Entity</span><span class="o">&gt;{</span>
+    <span class="o">...</span>
+<span class="o">}</span></code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="java"><span class="nc">PanacheRepositoryBase</span><span class="o">&lt;</span><span class="nc">Room</span><span class="o">,</span> <span class="nc">Integer</span><span class="o">&gt;</span> <span class="c1">// Integer = ID</span></code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_insert_data"><a class="anchor" href="#_insert_data"></a>2.2. Insert Data</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="java"><span class="nd">@Transactional</span>
+<span class="nd">@PostConstruct</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">insertData</span><span class="o">(){</span>
+    <span class="o">...</span>
+<span class="o">}</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>@Transactional</strong> immer verwenden bei änderungen in der DB.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_namedquery"><a class="anchor" href="#_namedquery"></a>2.3. NamedQuery</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="java"><span class="nd">@NamedQueries</span><span class="o">({</span>
+        <span class="nd">@NamedQuery</span><span class="o">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">"Person.findByFirstName"</span><span class="o">,</span> <span class="n">query</span> <span class="o">=</span> <span class="s">"select p from Person p where firstName = :firstName "</span><span class="o">)</span>
+<span class="o">})</span></code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="java"><span class="k">return</span> <span class="o">(</span><span class="nc">Customer</span><span class="o">)</span><span class="n">getEntityManager</span><span class="o">()</span>
+<span class="o">.</span><span class="na">createNamedQuery</span><span class="o">(</span><span class="s">"Customer.findByFirstNameAndLastName"</span><span class="o">)</span> <span class="c1">// name der NamedQuery</span>
+<span class="o">.</span><span class="na">setParameter</span><span class="o">(</span><span class="s">"firstName"</span><span class="o">,</span> <span class="n">firstName</span><span class="o">)</span> <span class="c1">// parameter :firstName</span>
+<span class="o">.</span><span class="na">getSingleResult</span><span class="o">();</span></code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_logger"><a class="anchor" href="#_logger"></a>2.4. Logger</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="java"><span class="nd">@Inject</span>
+<span class="nc">Logger</span> <span class="n">log</span><span class="o">;</span>
+<span class="n">log</span><span class="o">.</span><span class="na">info</span><span class="o">(</span><span class="s">"..."</span><span class="o">);</span></code></pre>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_logger_producer"><a class="anchor" href="#_logger_producer"></a>2.4.1. Logger Producer</h4>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">LoggerProducer</span> <span class="o">{</span>
 
+    <span class="nd">@Produces</span>
+    <span class="kd">public</span> <span class="nc">Logger</span> <span class="nf">produceLogger</span><span class="o">(</span><span class="nc">InjectionPoint</span> <span class="n">injectionPoint</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="nc">Logger</span><span class="o">.</span><span class="na">getLogger</span><span class="o">(</span><span class="n">injectionPoint</span><span class="o">.</span><span class="na">getBean</span><span class="o">().</span><span class="na">getBeanClass</span><span class="o">());</span>
+    <span class="o">}</span>
+<span class="o">}</span></code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_unmodifiable_list"><a class="anchor" href="#_unmodifiable_list"></a>2.5. Unmodifiable List</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="java"><span class="nc">Collections</span><span class="o">.</span><span class="na">unmodifiableList</span><span class="o">(...)</span></code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_read_csv"><a class="anchor" href="#_read_csv"></a>2.6. Read CSV</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="java"><span class="nc">List</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">&gt;</span> <span class="nf">readFile</span><span class="o">(</span><span class="nc">String</span> <span class="n">fileName</span><span class="o">)</span> <span class="o">{</span>
+        <span class="no">URL</span> <span class="n">url</span> <span class="o">=</span> <span class="nc">Thread</span><span class="o">.</span><span class="na">currentThread</span><span class="o">().</span><span class="na">getContextClassLoader</span><span class="o">().</span><span class="na">getResource</span><span class="o">(</span><span class="n">fileName</span><span class="o">);</span>
+        <span class="k">assert</span> <span class="n">url</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">;</span>
+        <span class="k">try</span> <span class="o">(</span><span class="nc">Stream</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">&gt;</span> <span class="n">stream</span> <span class="o">=</span> <span class="nc">Files</span><span class="o">.</span><span class="na">lines</span><span class="o">(</span><span class="nc">Paths</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">url</span><span class="o">.</span><span class="na">getPath</span><span class="o">()),</span> <span class="nc">StandardCharsets</span><span class="o">.</span><span class="na">UTF_8</span><span class="o">))</span> <span class="o">{</span>
+            <span class="k">return</span> <span class="n">stream</span>
+                    <span class="o">.</span><span class="na">skip</span><span class="o">(</span><span class="mi">1</span><span class="o">)</span>
+                    <span class="o">.</span><span class="na">distinct</span><span class="o">()</span>
+                    <span class="o">.</span><span class="na">map</span><span class="o">(</span><span class="n">line</span> <span class="o">-&gt;</span> <span class="o">{</span>
+                        <span class="k">if</span> <span class="o">(</span><span class="n">line</span><span class="o">.</span><span class="na">length</span><span class="o">()</span> <span class="o">&lt;=</span> <span class="mi">2</span><span class="o">)</span> <span class="o">{</span>
+                            <span class="k">return</span> <span class="n">line</span> <span class="o">+</span> <span class="s">" - 1"</span><span class="o">;</span>
+                        <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+                            <span class="k">return</span> <span class="n">line</span> <span class="o">+</span> <span class="s">" - 2"</span><span class="o">;</span>
+                        <span class="o">}</span>
+                    <span class="o">})</span>
+                    <span class="o">.</span><span class="na">collect</span><span class="o">(</span><span class="nc">Collectors</span><span class="o">.</span><span class="na">toList</span><span class="o">());</span>
+        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">IOException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+        <span class="o">}</span>
+        <span class="k">return</span> <span class="kc">null</span><span class="o">;</span>
+    <span class="o">}</span></code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_boundaryservice"><a class="anchor" href="#_boundaryservice"></a>3. Boundary/Service</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>@RequestScoped</p>
+</li>
+<li>
+<p>@Path("/endpoint")</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_inject_repository"><a class="anchor" href="#_inject_repository"></a>3.1. Inject Repository</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="java"><span class="nd">@Inject</span>
+<span class="nc">Repository</span> <span class="n">repository</span><span class="o">;</span></code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_uriinfo"><a class="anchor" href="#_uriinfo"></a>3.2. UriInfo</h3>
+<div class="paragraph">
+<p>@Context UriInfo info</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="java"><span class="nc">UriBuilder</span> <span class="n">uriBuilder</span> <span class="o">=</span> <span class="n">info</span>
+<span class="o">.</span><span class="na">getAbsolutePathBuilder</span><span class="o">()</span>
+<span class="o">.</span><span class="na">path</span><span class="o">(</span><span class="nc">Long</span><span class="o">.</span><span class="na">toString</span><span class="o">(</span><span class="n">person</span><span class="o">.</span><span class="na">getId</span><span class="o">()));</span>
+<span class="k">return</span> <span class="nc">Response</span><span class="o">.</span><span class="na">created</span><span class="o">(</span><span class="n">uriBuilder</span><span class="o">.</span><span class="na">build</span><span class="o">()).</span><span class="na">build</span><span class="o">();</span></code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="java"> <span class="k">return</span> <span class="nc">Response</span><span class="o">.</span><span class="na">status</span><span class="o">(</span><span class="mi">400</span><span class="o">).</span><span class="na">header</span><span class="o">(</span><span class="s">"reason"</span><span class="o">,</span> <span class="s">"out of range "</span><span class="o">).</span><span class="na">build</span><span class="o">();</span></code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_params"><a class="anchor" href="#_params"></a>3.3. Params</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>@PathParam</p>
+<div class="ulist">
+<ul>
+<li>
+<p>@Path("{id}")</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>@QueryParam("name")</p>
+<div class="ulist">
+<ul>
+<li>
+<p>@Path("/name")</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_jax_rs_formparam_example_html_formular"><a class="anchor" href="#_jax_rs_formparam_example_html_formular"></a>4. JAX-RS @FormParam example (HTML-Formular)</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_html_form"><a class="anchor" href="#_html_form"></a>4.1. HTML Form</h3>
+<div class="listingblock">
+<div class="title">simple HTML form with “post” method</div>
+<div class="content">
+<pre class="rouge highlight"><code data-lang="html"><span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+<span class="nt">&lt;h1&gt;</span>JAX-RS @FormQuery Testing<span class="nt">&lt;/h1&gt;</span>
+
+    <span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">"rest/user/add"</span> <span class="na">method=</span><span class="s">"post"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p&gt;</span>
+            Name : <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"name"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;</span>
+            Age : <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"age"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">value=</span><span class="s">"Add User"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/form&gt;</span>
+
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span></code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_formparam_example"><a class="anchor" href="#_formparam_example"></a>4.2. @FormParam Example</h3>
+<div class="listingblock">
+<div class="title">Example to use @FormParam to get above HTML form parameter values.</div>
+<div class="content">
+<pre class="rouge highlight"><code data-lang="java"><span class="kn">import</span> <span class="nn">javax.ws.rs.FormParam</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">javax.ws.rs.POST</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">javax.ws.rs.Path</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">javax.ws.rs.core.Response</span><span class="o">;</span>
+
+<span class="nd">@Path</span><span class="o">(</span><span class="s">"/user"</span><span class="o">)</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">UserService</span> <span class="o">{</span>
+
+    <span class="nd">@POST</span>
+    <span class="nd">@Path</span><span class="o">(</span><span class="s">"/add"</span><span class="o">)</span>
+    <span class="kd">public</span> <span class="nc">Response</span> <span class="nf">addUser</span><span class="o">(</span>
+        <span class="nd">@FormParam</span><span class="o">(</span><span class="s">"name"</span><span class="o">)</span> <span class="nc">String</span> <span class="n">name</span><span class="o">,</span>
+        <span class="nd">@FormParam</span><span class="o">(</span><span class="s">"age"</span><span class="o">)</span> <span class="kt">int</span> <span class="n">age</span><span class="o">)</span> <span class="o">{</span>
+
+        <span class="k">return</span> <span class="nc">Response</span><span class="o">.</span><span class="na">status</span><span class="o">(</span><span class="mi">200</span><span class="o">)</span>
+            <span class="o">.</span><span class="na">entity</span><span class="o">(</span><span class="s">"addUser is called, name : "</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s">", age : "</span> <span class="o">+</span> <span class="n">age</span><span class="o">)</span>
+            <span class="o">.</span><span class="na">build</span><span class="o">();</span>
+
+    <span class="o">}</span>
+
+<span class="o">}</span></code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_i18n"><a class="anchor" href="#_i18n"></a>5. I18N</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="title">I18N Beispiel</div>
+<div class="content">
+<pre class="rouge highlight"><code data-lang="java"><span class="nc">String</span> <span class="n">language</span><span class="o">;</span>
+<span class="nc">String</span> <span class="n">country</span><span class="o">;</span>
+
+<span class="k">if</span> <span class="o">(</span><span class="n">args</span><span class="o">.</span><span class="na">length</span> <span class="o">!=</span> <span class="mi">2</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">language</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">String</span><span class="o">(</span><span class="s">"en"</span><span class="o">);</span>
+    <span class="n">country</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">String</span><span class="o">(</span><span class="s">"US"</span><span class="o">);</span>
+<span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+    <span class="n">language</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">String</span><span class="o">(</span><span class="n">args</span><span class="o">[</span><span class="mi">0</span><span class="o">]);</span>
+    <span class="n">country</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">String</span><span class="o">(</span><span class="n">args</span><span class="o">[</span><span class="mi">1</span><span class="o">]);</span>
+<span class="o">}</span>
+
+<span class="nc">Locale</span> <span class="n">currentLocale</span><span class="o">;</span>
+<span class="nc">ResourceBundle</span> <span class="n">messages</span><span class="o">;</span>
+
+<span class="n">currentLocale</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Locale</span><span class="o">(</span><span class="n">language</span><span class="o">,</span> <span class="n">country</span><span class="o">);</span>
+
+<span class="n">messages</span> <span class="o">=</span> <span class="nc">ResourceBundle</span><span class="o">.</span><span class="na">getBundle</span><span class="o">(</span><span class="s">"at.htl.MessagesBundle"</span><span class="o">,</span> <span class="n">currentLocale</span><span class="o">);</span>
+
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Writing messages for "</span> <span class="o">+</span> <span class="n">currentLocale</span><span class="o">.</span><span class="na">toLanguageTag</span><span class="o">());</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">messages</span><span class="o">.</span><span class="na">getString</span><span class="o">(</span><span class="s">"greetings"</span><span class="o">));</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">messages</span><span class="o">.</span><span class="na">getString</span><span class="o">(</span><span class="s">"inquiry"</span><span class="o">));</span>
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">messages</span><span class="o">.</span><span class="na">getString</span><span class="o">(</span><span class="s">"farewell"</span><span class="o">));</span></code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">properies</div>
+<div class="content">
+<pre class="rouge highlight"><code data-lang="java"><span class="n">greetings</span> <span class="o">=</span> <span class="nc">Hallo</span><span class="o">.</span>
+<span class="n">farewell</span> <span class="o">=</span> <span class="nc">Tschüß</span><span class="o">.</span>
+<span class="n">inquiry</span> <span class="o">=</span> <span class="nc">Wie</span> <span class="n">gehts</span><span class="o">?</span></code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_marshalling_und_unmarshalling_json"><a class="anchor" href="#_marshalling_und_unmarshalling_json"></a>6. Marshalling und Unmarshalling JSON</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="java"><span class="nd">@JsonSerialize</span><span class="o">(</span><span class="n">using</span> <span class="o">=</span> <span class="nc">LocalDateSerializer</span><span class="o">.</span><span class="na">class</span><span class="o">)</span>
+<span class="nd">@JsonDeserialize</span><span class="o">(</span><span class="n">using</span> <span class="o">=</span> <span class="nc">LocalDateDeserializer</span><span class="o">.</span><span class="na">class</span><span class="o">)</span>
+<span class="nd">@Column</span><span class="o">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">"DATE_SIGNED"</span><span class="o">)</span>
+<span class="kd">private</span> <span class="nc">LocalDate</span> <span class="n">contractSigned</span><span class="o">;</span>
+
+    <span class="nd">@JsonSerialize</span><span class="o">(</span><span class="n">using</span> <span class="o">=</span> <span class="nc">LocalDateSerializer</span><span class="o">.</span><span class="na">class</span><span class="o">)</span>
+    <span class="nd">@JsonDeserialize</span><span class="o">(</span><span class="n">using</span> <span class="o">=</span> <span class="nc">LocalDateDeserializer</span><span class="o">.</span><span class="na">class</span><span class="o">)</span>
+    <span class="nd">@Column</span><span class="o">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">"DATE_END"</span><span class="o">)</span>
+    <span class="kd">private</span> <span class="nc">LocalDate</span> <span class="n">contractEnd</span><span class="o">;</span></code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">LocalDateDeserializer</span> <span class="kd">extends</span> <span class="nc">JsonDeserializer</span><span class="o">&lt;</span><span class="nc">LocalDate</span><span class="o">&gt;</span> <span class="o">{</span>
+<span class="nc">DateTimeFormatter</span> <span class="n">df</span> <span class="o">=</span> <span class="nc">DateTimeFormatter</span><span class="o">.</span><span class="na">ofPattern</span><span class="o">(</span><span class="s">"yyyy-MM-dd"</span><span class="o">);</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="nc">LocalDate</span> <span class="nf">deserialize</span><span class="o">(</span><span class="nc">JsonParser</span> <span class="n">arg0</span><span class="o">,</span> <span class="nc">DeserializationContext</span> <span class="n">arg1</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">IOException</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="nc">LocalDate</span><span class="o">.</span><span class="na">parse</span><span class="o">(</span><span class="n">arg0</span><span class="o">.</span><span class="na">getText</span><span class="o">(),</span> <span class="n">df</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span></code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">LocalDateSerializer</span> <span class="kd">extends</span> <span class="nc">JsonSerializer</span><span class="o">&lt;</span><span class="nc">LocalDate</span><span class="o">&gt;</span> <span class="o">{</span>
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">serialize</span><span class="o">(</span><span class="nc">LocalDate</span> <span class="n">arg0</span><span class="o">,</span> <span class="nc">JsonGenerator</span> <span class="n">arg1</span><span class="o">,</span> <span class="nc">SerializerProvider</span> <span class="n">arg2</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">IOException</span> <span class="o">{</span>
+        <span class="n">arg1</span><span class="o">.</span><span class="na">writeString</span><span class="o">(</span><span class="n">arg0</span><span class="o">.</span><span class="na">toString</span><span class="o">());</span>
+    <span class="o">}</span>
+<span class="o">}</span></code></pre>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_json_p"><a class="anchor" href="#_json_p"></a>6.1. JSON P</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="java"><span class="nc">JsonObjectBuilder</span> <span class="n">classroomBuilder</span> <span class="o">=</span> <span class="nc">Json</span><span class="o">.</span><span class="na">createObjectBuilder</span><span class="o">();</span>
+
+<span class="n">classroomBuilder</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"klasse"</span><span class="o">,</span> <span class="s">"4ahif"</span><span class="o">);</span>
+<span class="n">classroomBuilder</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"raum"</span><span class="o">,</span> <span class="s">"107"</span><span class="o">);</span>
+
+<span class="nc">JsonObject</span> <span class="n">classroom</span> <span class="o">=</span> <span class="n">classroomBuilder</span><span class="o">.</span><span class="na">build</span><span class="o">();</span></code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-05-30 17:50:20 UTC
+Last updated 2021-05-30 19:59:13 UTC
 </div>
 </div>
 </body>
