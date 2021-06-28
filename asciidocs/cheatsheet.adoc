@@ -153,6 +153,24 @@ List<String> readFile(String fileName) {
     }
 ----
 
+[source,java]
+----
+private void readCsv() {
+try {
+URL url = Thread.currentThread().getContextClassLoader().getResource(FILE_NAME);
+assert url != null;
+
+            Files.readAllLines(Paths.get(url.getPath()), StandardCharsets.UTF_8)
+                    .stream()
+                    .skip(1)
+                    .distinct()
+                    .map(line -> parseCourse(line.split(";")))
+                    .forEach(em::merge);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+----
 == Boundary/Service
 
 * @RequestScoped
@@ -281,6 +299,7 @@ farewell = Tschüß.
 inquiry = Wie gehts?
 ----
 
+
 == Marshalling und Unmarshalling JSON
 
 [source,java]
@@ -329,4 +348,37 @@ classroomBuilder.add("raum", "107");
 
 JsonObject classroom = classroomBuilder.build();
 
+----
+
+=== ParseCourse
+
+[source, java]
+----
+private Course parseCourse(String[] elems) {
+        return new Course(elems[4],
+                Double.parseDouble(elems[2]),LocalDateTime.parse(elems[1], DateTimeFormatter.ISO_LOCAL_DATE_TIME),
+                Integer.parseInt(elems[3]), courseTypeRepository
+                .findByAbbr(elems[0]));
+
+    }
+----
+
+
+=== Simple post
+
+[source,java]
+----
+@POST
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response addSurvey(Survey survey) {
+        Survey survey1 = surveyRepository.save(survey);
+
+        if (survey1 != null)
+        {
+            return Response.ok(survey1).build();
+        }
+
+        return  Response.status(Response.Status.BAD_REQUEST).build();
+    }
 ----
